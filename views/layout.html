@@ -27,10 +27,7 @@
                     <a href="/Upload" class="dropdown-item">업로드</a>
                     <a href="/License" class="dropdown-item">라이선스</a>
                     {%if perms.has('ipacl') %}
-                        <a href="/admin/ipacl" class="dropdown-item">[관리] IPACL</a>
-                    {% endif %}
-                    {%if perms.has('suspend_account') %}
-                        <a href="/admin/suspend_account" class="dropdown-item">[관리] 계정 차단</a>
+                        <a href="/aclgroup" class="dropdown-item">[관리] ACLGroup</a>
                     {% endif %}
                     {%if perms.has('grant') %}
                         <a href="/admin/grant" class="dropdown-item">[관리] 권한 부여</a>
@@ -167,7 +164,7 @@
             </ul>
             <ul class="footer-icons">
                 <li class="footer-poweredbyico">
-                    <a href="//gitlab.com/librewiki/Liberty-MW-Skin">Liberty</a> | <a href="//theseed.io/">the seed</a>
+                    <a href="//github.com/dorincop/theseed4.12.0-skin-marbling">marbling</a> | <a href="//https://github.com/foxtrot-99/imitated-seed-v2/">병아리</a>
                 </li>
             </ul>
         </div>
